@@ -13,7 +13,7 @@
 
     // This controller manages the product panels
     app.controller("PanelController", function () {
-       this.tab = 1;
+        this.tab = 1;
 
         this.selectTab = function (setTab) {
             this.tab = setTab;
