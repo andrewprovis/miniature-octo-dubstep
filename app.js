@@ -16,7 +16,8 @@
         name: 'Dodecahedron',
         price: 2.95,
         description: 'It\'s a gem... a really shiny gem. What more could you want?',
-        canPurchase: false
+        canPurchase: false,
+        soldOut: true
     }
 
 })();
