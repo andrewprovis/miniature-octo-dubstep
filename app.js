@@ -15,6 +15,7 @@
     app.controller("PanelController", function () {
         this.tab = 1;
 
+        // Sets the tab value/state
         this.selectTab = function (setTab) {
             this.tab = setTab;
         };
