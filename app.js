@@ -14,6 +14,10 @@
     // This controller manages the product panels
     app.controller("PanelController", function () {
        this.tab = 1;
+
+        this.selectTab = function (setTab) {
+            this.tab = setTab;
+        };
     });
 
     // Created a variable to hold product information of a gem.
