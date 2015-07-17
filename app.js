@@ -8,7 +8,7 @@
 
     // Creating our controller to handle sending gem information to our storefront.
     app.controller('StoreController', function () {
-        this.product = gem;
+        this.products = gem;
     });
 
     // Created a variable to hold product information of a gem.
