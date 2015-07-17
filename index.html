@@ -16,8 +16,37 @@
         <div ng-repeat="product in store.products" ng-hide="store.product.soldOut">
             <h1>{{product.name}}</h1>
             <h2>{{product.price | currency}}</h2>
-            <p>{{product.description}}</p>
+
             <button ng-show="product.canPurchase">Add to Cart</button>
+
+            <section>
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href ng-click="tab = 1">Description</a>
+                    </li>
+                    <li>
+                        <a href ng-click="tab = 2">Specification</a>
+                    </li>
+                    <li>
+                        <a href ng-click="tab = 3">Reviews</a>
+                    </li>
+                </ul>
+
+                <div class="panel">
+                    <h4>Description</h4>
+                    <p>{{product.description}}</p>
+                </div>
+                <div class="panel">
+                    <h4>Specifications</h4>
+                    <blockquote>None yet</blockquote>
+                </div>
+                <div class="panel">
+                    <h4>Reviews</h4>
+                    <blockquote>None yet</blockquote>
+                </div>
+            </section>
+
+
         </div>
     </div>
 </body>
