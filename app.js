@@ -12,12 +12,21 @@
     });
 
     // Created a variable to hold product information of a gem.
-    var gem = {
-        name: 'Dodecahedron',
-        price: 2.95,
-        description: 'It\'s a gem... a really shiny gem. What more could you want?',
-        canPurchase: false,
-        soldOut: true
-    }
+    var gem = [
+        {
+            name: 'Dodecahedron',
+            price: 2.95,
+            description: 'It\'s a gem... a really shiny gem. What more could you want?',
+            canPurchase: true,
+            soldOut: false
+        },
+        {
+            name: "Pentagonal Gem",
+            price: 5.95,
+            description: "Another really shiny gem but this one has 5 sides. Oh my.",
+            canPurchase: false,
+            soldOut: false
+        }
+    ];
 
 })();
