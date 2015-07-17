@@ -18,6 +18,11 @@
         this.selectTab = function (setTab) {
             this.tab = setTab;
         };
+
+        // Checks if the tab is selected
+        this.isSelected = function (checkTab) {
+            return this.tab === checkTab;
+        };
     });
 
     // Created a variable to hold product information of a gem.
