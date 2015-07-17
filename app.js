@@ -11,6 +11,11 @@
         this.products = gem;
     });
 
+    // This controller manages the product panels
+    app.controller("PanelController", function () {
+       this.tab = 1;
+    });
+
     // Created a variable to hold product information of a gem.
     var gem = [
         {
