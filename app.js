@@ -29,6 +29,11 @@
     // Controller to manage the review form
     app.controller('ReviewController', function () {
         this.review = {};
+
+        this.addReview = function (product) {
+            // Pushes 'review' into this products 'reviews' array.
+            product.reviews.push(this.review);
+        };
     });
 
     // Created a variable to hold product information of a gem.
