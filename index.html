@@ -33,9 +33,7 @@
 
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="product in store.products" ng-hide="store.product.soldOut">
-                <h3>
-                    {{product.name}}
-                    <em class="pull-right">{{product.price | currency}}</em>
+                <h3 ng-include="'product-title.html'">
                 </h3>
 
                 <button ng-show="product.canPurchase">Add to Cart</button>
