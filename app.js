@@ -33,6 +33,9 @@
         this.addReview = function (product) {
             // Pushes 'review' into this products 'reviews' array.
             product.reviews.push(this.review);
+
+            // Clears form and empties live preview
+            this.review = {};
         };
     });
 
