@@ -42,7 +42,11 @@
                 </div>
                 <div class="panel" ng-show="panel.isSelected(3)">
                     <h4>Reviews</h4>
-                    <blockquote ng-repeat="review in product.reviews">None yet</blockquote>
+                    <blockquote ng-repeat="review in product.reviews">
+                        <b>Stars: {{review.stars}}</b>
+                        {{review.body}}
+                        <cite> by: {{review.author}}</cite>
+                    </blockquote>
 
                     <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
 
