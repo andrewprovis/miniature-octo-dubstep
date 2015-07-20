@@ -45,16 +45,23 @@
                     <blockquote ng-repeat="review in product.reviews">None yet</blockquote>
 
                     <form name="reviewForm">
-                        <select>
+
+                        <blockquote>
+                            <b>Stars: {{review.stars}}</b>
+                            {{review.body}}
+                            <cite>by: {{review.author}}</cite>
+                        </blockquote>
+
+                        <select ng-model="review.stars">
                             <option value="1">1 Star</option>
                             <option value="2">2 Star</option>
                             <option value="3">3 Star</option>
                             <option value="4">4 Star</option>
                             <option value="5">5 Star</option>
                         </select>
-                        <textarea></textarea>
+                        <textarea ng-model="review.body"></textarea>
                         <label>by:</label>
-                        <input type="email" />
+                        <input ng-model="review.author" type="email" />
                         <input type="submit" value="Submit" />
                     </form>
                 </div>
