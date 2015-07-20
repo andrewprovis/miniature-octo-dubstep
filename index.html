@@ -44,7 +44,7 @@
                     <h4>Reviews</h4>
                     <blockquote ng-repeat="review in product.reviews">None yet</blockquote>
 
-                    <form name="reviewForm">
+                    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl">
 
                         <blockquote>
                             <b>Stars: {{review.stars}}</b>
