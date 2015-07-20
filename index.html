@@ -23,6 +23,11 @@
     <p>{{"Hello" + " you"}}</p>
 
     <div ng-controller="StoreController as store">
+        <header>
+            <h1 class="text-center">Flatlander Crafted Gems</h1>
+            <h2 class="text-center">– an Angular store –</h2>
+        </header>
+
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="product in store.products" ng-hide="store.product.soldOut">
                 <h3>
