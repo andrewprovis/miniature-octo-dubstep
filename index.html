@@ -42,7 +42,21 @@
                 </div>
                 <div class="panel" ng-show="panel.isSelected(3)">
                     <h4>Reviews</h4>
-                    <blockquote>None yet</blockquote>
+                    <blockquote ng-repeat="review in product.reviews">None yet</blockquote>
+
+                    <form name="reviewForm">
+                        <select>
+                            <option value="1">1 Star</option>
+                            <option value="1">2 Star</option>
+                            <option value="1">3 Star</option>
+                            <option value="1">4 Star</option>
+                            <option value="1">5 Star</option>
+                        </select>
+                        <textarea></textarea>
+                        <label>by:</label>
+                        <input type="email" />
+                        <input type="submit" value="Submit" />
+                    </form>
                 </div>
             </section>
 
