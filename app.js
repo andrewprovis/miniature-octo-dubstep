@@ -26,6 +26,11 @@
         };
     });
 
+    // Controller to manage the review form
+    app.controller('ReviewController', function () {
+        this.review = {};
+    });
+
     // Created a variable to hold product information of a gem.
     var gem = [
         {
