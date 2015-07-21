@@ -4,7 +4,7 @@
 
 (function () {
     // Creating our Store module which will run the Gem Store/Shop
-    var app = angular.module('store', []);
+    var app = angular.module('store', ['store-products']);
 
     // Creating our controller to handle sending gem information to our storefront.
     app.controller('StoreController', function () {
