@@ -39,6 +39,13 @@
         };
     });
 
+    app.directive('productTitle', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'product-title.html'
+        }
+    });
+
     // Created a variable to hold product information of a gem.
     var gem = [
         {
