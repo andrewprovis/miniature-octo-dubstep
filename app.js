@@ -7,9 +7,17 @@
     var app = angular.module('store', ['store-products']);
 
     // Creating our controller to handle sending gem information to our storefront.
-    app.controller('StoreController', function () {
-        this.products = gem;
-    });
+    app.controller('StoreController', ['$http', function ($http) {
+
+            var store = this;
+
+            store.products = [];
+
+            $http.get('/products.json').success(function(data) {
+                store.products = data;
+            });
+        }]
+    );
 
     // Controller to manage the review form
     app.controller('ReviewController', function () {
